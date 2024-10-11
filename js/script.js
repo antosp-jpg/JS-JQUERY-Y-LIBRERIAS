@@ -2,8 +2,19 @@ const html = document.querySelector("html");
 html.setAttribute("data-bs-theme", "dark");
 
 document.addEventListener("DOMContentLoaded", () => {
-    // --- Create LightBox
-    const galleryGrid = document.querySelector(".gallery-grid");
+//INICIALIZAR AOS
+  
+  AOS.init();
+
+
+    var typed = new Typed('#element', {
+      strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+      typeSpeed: 50,
+    });
+  
+  
+  // --- Create LightBox
+    const galleryGrid = $(".gallery-grid");
     const links = galleryGrid.querySelectorAll("a");
     const imgs = galleryGrid.querySelectorAll("img");
     const lightboxModal = document.getElementById("lightbox-modal");
